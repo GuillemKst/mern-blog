@@ -18,7 +18,7 @@ export default function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/sign-in' element={<SignIn/>}/>
         <Route path='/sign-up' element={<SignUp/>}/>
-        <Route element={<PrivateRoute/>}>
+        <Route element={<PrivateRoute/>}> {/*Crear págines privades només per veure al estre registrat */ }
         <Route path='/dashboard' element={<Dashboard/>}/>
         </Route>
         <Route path='/projects' element={<Projects/>}/>
