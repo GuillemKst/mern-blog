@@ -17,6 +17,7 @@ import {
   deleteUserFailure,
   deleteUserStart,
   deleteUserSuccess,
+  signoutSuccess,
 } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import {HiOutlineExclamationCircle} from 'react-icons/hi'
@@ -149,6 +150,21 @@ export default function DashProfile() {
       }
     };
   
+    const handleSignout = async () => {
+      try {
+        const res = await fetch('api/user/signout', {
+          method: 'POST',
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          console.log(data.message);
+        } else {
+          dispatch(signoutSuccess())
+        }
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
 
 
   return (
@@ -226,7 +242,7 @@ export default function DashProfile() {
       </form>
       <div className='text-red-500 flex justify-between mt-5'>
         <span className='cursor-pointer' onClick={() => setShowModal(true)}>Delete Account</span>
-        <span className='cursor-pointer'>Sign Out</span>
+        <span className='cursor-pointer' onClick={handleSignout}>Sign Out</span>
       </div>
       {updateUserSuccess && (
         <Alert color='success' className='mt-5'>
