@@ -29,6 +29,7 @@ export default function Home() {
         <div className="p-10">
           <CardStack items={items} />
           <CardStackControls/>
+    
 
         </div>
       );

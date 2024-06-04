@@ -32,6 +32,9 @@ export default function OAuth() {
         dispatch(signInSuccess(data))
         navigate('/')
       }
+      if(!res.ok) {
+        console.log(data)
+      }
     } catch (error) {
       console.log(error);
     }
@@ -44,4 +47,4 @@ export default function OAuth() {
       Continue with Google
     </Button>
   )
-}
+};
