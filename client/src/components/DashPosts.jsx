@@ -99,7 +99,7 @@ const [postIdToDelete, setPostIdToDelete] = useState('')
                             }} className='bg-red-500 text-white px-2 py-1 rounded-md hover:underline cursor-pointer'>Delete</span>
                         </Table.Cell>
                         <Table.Cell>
-                            <Link to={`/upadte-post/${post._id}`} >
+                            <Link to={`/update-post/${post._id}`} >
                             <span className='bg-blue-500 text-white px-2 py-1 rounded-md hover:underline'>Edit</span>
                             </Link>
                         </Table.Cell>
