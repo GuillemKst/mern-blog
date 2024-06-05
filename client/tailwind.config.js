@@ -9,6 +9,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('flowbite/plugin') // Add the Flowbite plugin
+    require('flowbite/plugin'), require('tailwind-scrollbar') // Add the Flowbite plugin
   ],
 }
