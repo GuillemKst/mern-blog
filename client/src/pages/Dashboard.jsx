@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import DashSidebar from '../components/DashSidebar'
 import DashProfile from '../components/DashProfile'
-
+import { current } from '@reduxjs/toolkit'
+import DashPosts from '../components/DashPosts'
 
 {/*Mostrar Components segons els params de URLS*/}
 export default function Dashboard() {
@@ -24,6 +25,7 @@ export default function Dashboard() {
       </div>
       {/*Profile...*/}
       {tab === 'profile' && <DashProfile/>} {/* Condició per mostrar components al complir la condició del parametre*/}
+      {tab === 'posts' && <DashPosts/>}
     </div>
   )
 }
