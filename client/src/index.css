@@ -10,3 +10,40 @@
 body {
     height: 100vh;
 }
+
+
+
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+
+}   
+
+
+.post-content h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 1.5rem 0;
+}
+
+.post-content h2 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    margin-bottom: 1.5rem 0;
+}
+
+.post-content a {
+    color: rgb(73, 179, 199);
+    text-decoration: none;
+
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode .post-content a {
+    color: red;
+}   
