@@ -47,3 +47,8 @@ body {
 .dark-mode .post-content a {
     color: red;
 }   
+
+.post-category:hover {
+    color: red;
+    text-decoration: none;
+}
