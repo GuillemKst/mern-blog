@@ -5,6 +5,7 @@ import DashProfile from '../components/DashProfile'
 import { current } from '@reduxjs/toolkit'
 import DashPosts from '../components/DashPosts'
 import DashUsers from '../components/DashUsers'
+import DashComments from '../components/DashComments'
 
 {/*Mostrar Components segons els params de URLS*/}
 export default function Dashboard() {
@@ -28,6 +29,7 @@ export default function Dashboard() {
       {tab === 'profile' && <DashProfile/>} {/* Condició per mostrar components al complir la condició del parametre*/}
       {tab === 'posts' && <DashPosts/>}
       {tab === 'users' && <DashUsers/>}
+      {tab === 'comments' && <DashComments/>}
     </div>
   )
 }
