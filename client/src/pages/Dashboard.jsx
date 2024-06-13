@@ -6,6 +6,7 @@ import { current } from '@reduxjs/toolkit'
 import DashPosts from '../components/DashPosts'
 import DashUsers from '../components/DashUsers'
 import DashComments from '../components/DashComments'
+import DashBoardComp from '../components/DashBoardComp'
 
 {/*Mostrar Components segons els params de URLS*/}
 export default function Dashboard() {
@@ -30,6 +31,7 @@ export default function Dashboard() {
       {tab === 'posts' && <DashPosts/>}
       {tab === 'users' && <DashUsers/>}
       {tab === 'comments' && <DashComments/>}
+      {tab === 'dash' && <DashBoardComp/>}
     </div>
   )
 }
